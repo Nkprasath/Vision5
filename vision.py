@@ -7,6 +7,7 @@ st.header("Artificial Vision for indoor navigation")
 st.subheader("Detecting doors,furnitures, stairs beforehand and prevent accidents")
 loaded_model=load_model("vision1.h5")
 FRAME_WINDOW = st.image([])
+webcam = cv2.VideoCapture(0)
 if st.checkbox("Run"):
     
     webcam = cv2.VideoCapture(0)
